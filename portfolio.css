@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a202c; /* Dark background */
+  color: #cbd5e0; /* Light text color */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2d3748; /* Darker background for navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 1.5rem;
+}
+
+nav a {
+  color: #cbd5e0; /* Light text color for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38b2ac; /* Teal color on hover */
+}
+
+section {
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  scroll-margin-top: 70px; /* Prevent content from hiding behind navbar */
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #2d3748; /* Darker footer background */
+}
