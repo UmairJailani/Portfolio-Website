@@ -5,6 +5,42 @@ body {
   color: #cbd5e0; /* Light text color */
 }
 
+.logo {
+  display: inline-block;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  padding: 0px;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: #1f2c49;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 80px;
+}
+
+.logo:hover {
+  background-color: #234c7e;
+  color: black;
+}
+
+.logo h2 {
+  font-size: 25px;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+}
+
+.logo p {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.logo img {
+  height: 50px; /* Adjust based on your design */
+  width: auto; /* Maintain aspect ratio */
+}
+
 header {
   position: fixed;
   top: 0;
@@ -12,12 +48,14 @@ header {
   background-color: #2d3748; /* Darker background for navbar */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  border: 0.5px solid black;
 }
 
 nav {
   display: flex;
-  justify-content: center;
-  padding: 1rem 0;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 3rem;
 }
 
 nav ul {
@@ -49,10 +87,76 @@ section {
   justify-content: center;
   padding: 2rem;
   scroll-margin-top: 70px; /* Prevent content from hiding behind navbar */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Section Background Colors */
+#about {
+  background-color: #2d3748; /* Darker color for About section */
+}
+
+#projects {
+  background-color: #4a5568; /* Different color for Projects section */
+}
+
+#skills {
+  background-color: #718096; /* Lighter color for Skills section */
+}
+
+#contact {
+  background-color: #a0aec0; /* Lightest color for Contact section */
 }
 
 footer {
   text-align: center;
   padding: 2rem;
   background-color: #2d3748; /* Darker footer background */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  nav li {
+    margin: 0.5rem 0; /* Space out links */
+  }
+
+  section {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  p {
+    font-size: 1rem; /* Smaller paragraph size */
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 0.5rem 0; /* Reduce navbar padding */
+  }
+
+  nav li {
+    margin: 0.25rem 0; /* Further reduce margin between links */
+  }
+
+  section {
+    padding: 0.5rem; /* Further reduce section padding */
+  }
+
+  h2 {
+    font-size: 1.25rem; /* Even smaller heading size */
+  }
+
+  p {
+    font-size: 0.9rem; /* Smaller paragraph size */
+  }
+}
+nav a:focus {
+  outline: none; /* Remove focus outline */
 }
