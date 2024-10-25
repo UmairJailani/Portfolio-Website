@@ -9,10 +9,15 @@
   </head>
   <body>
     <!-- Navbar Section -->
+
     <header>
       <nav>
+        <div id="logo" class="logo">
+          <h2>Umair Jailani</h2>
+          <h4>Front-End Developer</h4>
+        </div>
         <ul>
-          <li><a href="#about">About Me</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -21,18 +26,58 @@
     </header>
 
     <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Your introduction here.</p>
+
+    <section id="home">
+      <div class="intro">
+        <div class="intoduction">
+          <h1>Hello, I'm a Front End Developer</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+            reiciendis deleniti officiis neque repellendus beatae alias, impedit
+            consequuntur voluptatibus deserunt unde asperiores quia inventore
+            velit autem! Cupiditate eaque dicta, maxime alias non sit facilis
+            accusamus asperiores soluta incidunt tempore temporibus.
+          </p>
+        </div>
+        <div class="socials">
+          <img src="/linkedin-animated-logo.gif" />
+          <img src="/Github-animated-logo.gif" alt="" />
+        </div>
+      </div>
+      <img src="/intropic.jpg" class="intropic" />
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-      <h2>My Projects</h2>
-      <p>Details about your projects here.</p>
+
+    <section id="project">
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="carousel">
+          <button class="carousel-button left">❮</button>
+          <div class="carousel-track-container">
+            <div class="carousel-track">
+              <div class="carousel-item">
+                <img src="/testimg.jpg" alt="Project 1" />
+                <div class="project-overlay">Project 1</div>
+              </div>
+              <div class="carousel-item">
+                <img src="/testimg2.jfif" alt="Project 2" />
+                <div class="project-overlay">Project 2</div>
+              </div>
+              <div class="carousel-item">
+                <img src="/testimg3.jfif" alt="Project 3" />
+                <div class="project-overlay">Project 3</div>
+              </div>
+              <!-- Add more items as needed -->
+            </div>
+          </div>
+          <button class="carousel-button right">❯</button>
+        </div>
+      </section>
     </section>
 
     <!-- Skills Section -->
+
     <section id="skills">
       <h2>My Skills</h2>
       <ul>
@@ -44,6 +89,7 @@
     </section>
 
     <!-- Contact Section -->
+
     <section id="contact">
       <h2>Contact Me</h2>
       <p>
@@ -54,9 +100,9 @@
 
     <footer>
       <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+      <a href="https://lordicon.com/">Icons by Lordicon.com</a>
     </footer>
 
     <script src="/portfolio.js"></script>
-    <!-- Link to your JS file -->
   </body>
 </html>

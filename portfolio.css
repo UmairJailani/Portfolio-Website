@@ -4,6 +4,30 @@ body {
   background-color: #1a202c; /* Dark background */
   color: #cbd5e0; /* Light text color */
 }
+.logo {
+  /* border: 2px solid red; */
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  background-color: #272d38;
+  border-radius: 30px;
+  width: 200px;
+  margin: 0px;
+}
+
+.logo h2 {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.logo h4 {
+  margin: 0px;
+  font-size: 10px;
+}
 
 header {
   position: fixed;
@@ -16,8 +40,9 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1rem 0;
+  align-items: center;
 }
 
 nav ul {
@@ -38,21 +63,133 @@ nav a {
 }
 
 nav a:hover {
-  color: #38b2ac; /* Teal color on hover */
+  color: #38b2ac;
 }
 
 section {
-  min-height: 100vh; /* Full screen height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  scroll-margin-top: 70px; /* Prevent content from hiding behind navbar */
+  scroll-margin-top: 90px;
+}
+
+#home {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: 1;
+  gap: 10rem;
+}
+
+.intro {
+  height: 500px;
+  /* border: 2px solid red; */
+  width: 50%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  gap: 20px;
+}
+
+.intropic {
+  /* border: 2px solid red; */
+  height: 80vh;
+  width: 60vh;
+}
+
+.socials {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.socials img {
+  /* border: 2px solid white; */
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
   background-color: #2d3748; /* Darker footer background */
+}
+
+.carousel {
+  position: relative;
+  width: 80%; /* Adjust width as needed */
+  margin: auto;
+  overflow: hidden;
+}
+
+#projects h2 {
+  margin-top: 50px;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+  border: 2px solid blue;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 50%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid red;
+  margin: 0px;
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-button.left {
+  left: 100px;
+}
+
+.carousel-button.right {
+  right: 100px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
