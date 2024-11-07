@@ -3,105 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Your Name | Front-End Developer</title>
+    <title>Umair's Portfolio</title>
     <link rel="stylesheet" href="/portfolio.css" />
   </head>
   <body>
-    <!-- Navbar Section -->
-
     <header>
       <nav>
-        <div id="logo" class="logo">
-          <h2>Umair Jailani</h2>
-          <h4>Front-End Developer</h4>
-        </div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#HOME" class="active">Home</a>
+        <a href="#PROJECTS">Projects</a>
+        <a href="#TECHNOLOGIES">Technologies</a>
+        <a href="#CONTACT">Get In Touch</a>
       </nav>
     </header>
 
-    <!-- About Section -->
-
-    <section id="home">
-      <div class="intro">
-        <div class="intoduction">
-          <h1>Hello, I'm a Front End Developer</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-            reiciendis deleniti officiis neque repellendus beatae alias, impedit
-            consequuntur voluptatibus deserunt unde asperiores quia inventore
-            velit autem! Cupiditate eaque dicta, maxime alias non sit facilis
-            accusamus asperiores soluta incidunt tempore temporibus.
-          </p>
-        </div>
+    <section id="HOME">
+      <div class="bio">
+        <h1>Hi, I'm Umair,</h1>
+        <h2>A Front-end Developer</h2>
+        <p>
+          The life of a passionate web developer with a keen eye for design and
+          a strong foundation in front-end and responsive development.
+        </p>
+        <button>Download CV</button>
         <div class="socials">
-          <img src="/linkedin-animated-logo.gif" />
-          <img src="/Github-animated-logo.gif" alt="" />
+          <a href="#"><img src="/githubicon.svg" class="giticon" />GitHub</a>
+          <a href="#"
+            ><img src="/linkedinicon.svg" class="linkedicon" />LinkedIn</a
+          >
         </div>
       </div>
-      <img src="/intropic.jpg" class="intropic" />
+      <div class="image-background"></div>
+      <div class="socials"></div>
     </section>
 
-    <!-- Projects Section -->
-
-    <section id="project">
-      <section id="projects">
-        <h2>My Projects</h2>
-        <div class="carousel">
-          <button class="carousel-button left">❮</button>
-          <div class="carousel-track-container">
-            <div class="carousel-track">
-              <div class="carousel-item">
-                <img src="/testimg.jpg" alt="Project 1" />
-                <div class="project-overlay">Project 1</div>
-              </div>
-              <div class="carousel-item">
-                <img src="/testimg2.jfif" alt="Project 2" />
-                <div class="project-overlay">Project 2</div>
-              </div>
-              <div class="carousel-item">
-                <img src="/testimg3.jfif" alt="Project 3" />
-                <div class="project-overlay">Project 3</div>
-              </div>
-              <!-- Add more items as needed -->
-            </div>
-          </div>
-          <button class="carousel-button right">❯</button>
-        </div>
-      </section>
+    <section id="PROJECTS">
+      <h3>Projects</h3>
+      <div class="project-gallery">
+        <img src="project1.jpg" alt="Project 1" />
+        <img src="project2.jpg" alt="Project 2" />
+        <img src="project3.jpg" alt="Project 3" />
+        <img src="project4.jpg" alt="Project 4" />
+      </div>
     </section>
 
-    <!-- Skills Section -->
-
-    <section id="skills">
-      <h2>My Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-
-    <section id="contact">
-      <h2>Contact Me</h2>
+    <section id="TECHNOLOGIES">
+      <h2>Current Technologies</h2>
       <p>
-        Email:
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        I'm proficient in a range of modern technologies that empower me to
+        build highly functional solutions.
       </p>
+      <div class="technology-grid">
+        <div class="technology-card">
+          <img src="figma-icon.png" alt="Figma Icon" />
+          <h3>Figma</h3>
+          <p>Design Tool</p>
+        </div>
+        <div class="technology-card">
+          <img src="typescript-icon.png" alt="TypeScript Icon" />
+          <h3>TypeScript</h3>
+          <p>JavaScript but better</p>
+        </div>
+        <div class="technology-card">
+          <img src="react-icon.png" alt="React Icon" />
+          <h3>React</h3>
+          <p>JavaScript Library</p>
+        </div>
+        <div class="technology-card">
+          <img src="nextjs-icon.png" alt="Next.js Icon" />
+          <h3>Next.js</h3>
+          <p>React Framework</p>
+        </div>
+        <div class="technology-card">
+          <img src="tailwind-icon.png" alt="Tailwind Icon" />
+          <h3>Tailwind</h3>
+          <p>CSS Framework</p>
+        </div>
+        <div class="technology-card">
+          <img src="git-icon.png" alt="Git Icon" />
+          <h3>Git</h3>
+          <p>Version Control</p>
+        </div>
+        <div class="technology-card">
+          <img src="supabase-icon.png" alt="Supabase Icon" />
+          <h3>Supabase</h3>
+          <p>Backend Tool</p>
+        </div>
+        <div class="technology-card">
+          <img src="appwrite-icon.png" alt="Appwrite Icon" />
+          <h3>Appwrite</h3>
+          <p>Backend Tool</p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
-      <a href="https://lordicon.com/">Icons by Lordicon.com</a>
-    </footer>
+    <section id="CONTACT">
+      <h3>Get in Touch</h3>
+      <h1>Contact Me</h1>
+    </section>
 
     <script src="/portfolio.js"></script>
   </body>
