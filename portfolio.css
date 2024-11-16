@@ -1,4 +1,5 @@
 /* General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +14,13 @@ body {
 }
 
 /* Sticky Navbar with Glowing Active Button */
+
 header {
   position: sticky;
   top: 0;
   width: 100%;
   padding: 20px 120px;
-  background: #11141a;
+  background: transparent;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -43,6 +45,7 @@ nav a.active {
 }
 
 /* Section Styles */
+
 section {
   padding: 80px 0;
   text-align: center;
@@ -124,27 +127,71 @@ section {
 }
 
 /* Projects Section */
-#PROJECTS h3 {
-  padding-bottom: 20px;
+
+main {
+  display: grid;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  max-height: 600px;
+  gap: 0.5rem;
+  margin: 0px 250px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.5rem;
 }
 
-.carousel-item img {
-  width: 200px;
-  height: 600px;
-  aspect-ratio: 3/2;
-  object-fit: contain;
+article {
+  background-color: transparent;
+  border: #aaa 2px solid;
+  border-radius: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+  transform: scale(0.5);
+  &.reveal {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-.carousel-item h5,
-p {
-  color: white;
+article a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  aspect-ratio: 4/2;
+  object-fit: cover;
+  padding: 20px;
 }
+@media screen and (min-width: 640px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-rows: 4fr 3fr 3fr;
+  }
+  article {
+    &:nth-of-type(1) {
+      grid-row: 1/3;
+    }
+    &:nth-of-type(2) {
+      grid-row: 3/4;
+    }
+    &:nth-of-type(5) {
+      grid-column: 2/4;
+      grid-row: 2/4;
+    }
+  }
+}
+
+/* Technologies Section */
 
 #TECHNOLOGIES {
   background-color: #1f242d;
 }
 
-/* Technologies Section */
 #TECHNOLOGIES h2 {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -156,20 +203,25 @@ p {
   color: #aaa;
 }
 
+#TECHNOLOGIES img {
+  /* border: 2px solid red; */
+  width: 4rem;
+}
+
 .technology-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .technology-card {
   background-color: #2a2e35;
   border-radius: 15px;
-  padding: 15px;
+  padding: 20px;
   margin: 10px;
-  width: 250px;
+  width: 300px;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -182,19 +234,6 @@ p {
 
 .technology-card:hover {
   transform: scale(1.05);
-}
-
-.technology-card svg {
-  /* border: 2px solid red; */
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  object-fit: contain;
-}
-
-#technology-card1 svg {
-  filter: invert(100%);
 }
 
 .tech_detail {
@@ -213,4 +252,55 @@ p {
   color: #aaa;
   padding: 0px;
   margin: 0px;
+}
+
+#CONTACT {
+  background-color: #1f242d;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  padding: 250px 0px; /* Adds space for the footer */
+}
+
+#CONTACT h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#CONTACT p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact-info a {
+  color: #ff7a59;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+#CONTACT footer {
+  position: absolute;
+  bottom: 30px; /* Distance from the bottom of the section */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #c0c0c0;
+}
+
+#CONTACT footer a {
+  color: #ff7a59;
+  text-decoration: none;
+}
+
+#CONTACT footer a:hover {
+  text-decoration: underline;
 }
